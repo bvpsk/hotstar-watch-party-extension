@@ -1,0 +1,68 @@
+#wp-holder{
+    /* min-width: 5rem;
+    min-height: 5rem; */
+    padding: 0.5rem;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.wp-logo{
+    width: 2.5rem;
+    margin-bottom: 0.35rem;
+}
+#wp-overlay-wrapper{
+    background-color: rgb(55 55 60 / 80%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wp-overlay{
+    padding: 1rem;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+}
+.overlay-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+}
+#wp-close{
+    width: 2.5rem;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#wp-inp-name{
+    background: transparent;
+    outline: none;
+    border: none;
+    /* border: 3px solid transparent; */
+    border: 2px solid white;
+    font-size: 2rem;
+    width: 25rem;
+    padding: 0 1rem;
+    color: white;
+}
+#wp-inp-name::placeholder{
+    color: rgb(150, 147, 170);
+}
+#wp-create-btn{
+    background-color: white;
+    color: royalblue;
+    font-size: 2rem;
+    padding: 0.3rem;
+    font-weight: bolder;
+    margin-left: 2rem;
+    cursor: pointer;
+}

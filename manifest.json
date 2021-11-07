@@ -1,0 +1,47 @@
+{
+    "name": "Hotstar WatchParty",
+    "description": "Hotstar WatchParty Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "app/popup.html",
+        "default_icon": "app/icon.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": ["scripting", "tabs", "storage", "activeTab"],
+    "host_permissions": [
+        "https://www.hotstar.in/*",
+        "https://www.hotstar.com/*",
+        "https://cherie-party.herokuapp.com/*",
+        "http://localhost:5555/*"
+    ],
+ 
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "app/icon.png",
+                "app/share.png",
+                "app/close.png",
+                "app/bj1.js",
+                "app/socket.io.min.js",
+                "app/wp1.css",
+                "app/watchParty.css",
+                "app/watchParty.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "externally_connectable": {
+        "matches": [
+            "http://localhost:5555/*",
+            "https://cherie-party.herokuapp.com/*",
+            "https://www.hotstar.in/*",
+            "https://www.hotstar.com/*"
+        ]
+    }
+}
