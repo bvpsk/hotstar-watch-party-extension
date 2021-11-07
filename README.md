@@ -1,6 +1,6 @@
 # Hotstar Watch Party Chrome Extension
 
-<img src = "sprites/infographic.png">
+<img src = "sprites/HWP_infographic.png">
 <img src = "sprites/realTimeChatAndSyncStreaming.png">
 
 Watch Party is a feature that allowed people to connect and watch people who are at distant places.
